@@ -1,1 +1,13 @@
 theme: jekyll-theme-minimal
+            - name: Add-header
+  # You may pin to the exact commit or the version.
+  # uses: Minituff/add-header-action@7110db31c6f04477e9ca9908b72943b0c63cef6c
+  uses: Minituff/add-header-action@v1.1.6
+  with:
+    # Do not actually make changes, instead effected files are viewable in the logs
+    dry-run: # optional, default is false
+    # Add more output to the console for debugging
+    verbose: # optional, default is false
+    # Use a different file name other than .headerrc.yml
+    file-name: # optional, default is .headerrc.yml
+          
