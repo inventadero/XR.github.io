@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Hapy new year
+  Original code by giyermo https://github.com/giyermo/feliz2019
+-->
+
+<html>
+  <head>
+    <!--
+    <script src="//rawgit.com/aframevr/aframe/cf15c15/dist/aframe-master.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="//unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+	  <script src="//rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+	  <script src="//unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
+    -->
+    <script src="aframe-master-cf15c15.min.js"></script>
+    <script src="aframe-extras-5.0.0.min.js"></script>
+    <script src="aframe-text-geometry-component-0.5.1.min.js"></script>
+    <script src="aframe-environment-component-7528e44.min.js"></script>
+    <script src="aframe-particle-system-component-1.1.3.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+    	<a-entity environment="preset: starry; ground: hills; groundColor: white; groundColor2: grey;
+    	                       playArea: 1; groundYScale: 20"></a-entity>
+
+      <a-entity position="0 5 0" particle-system="preset: snow"></a-entity>
+      <a-entity position="3 5 0" particle-system="preset: snow"></a-entity>
+      <a-entity position="-3 5 0" particle-system="preset: snow"></a-entity>
+      <a-entity position="0 5 0" particle-system="preset: snow"></a-entity>
+
+      <a-entity position="70 10 -50"
+                particle-system="rotationAxis: x; rotationAngle: 0.7"></a-entity>
+      <a-entity position="-55 10 -50"
+                particle-system="preset: colors rotationAxis: x; rotationAngle: 0.7"></a-entity>
+      <a-entity material="color: gold" scale="100 100 100"
+                text-geometry="value: 2019" position="-70 1000 -1000">
+      	<a-animation attribute="position" to="-70 20 -100" dur="17000"></a-animation>
+      </a-entity>
+      <a-entity material="color: gold" scale="100 100 100"
+                text-geometry="value: 2018" position="-70 20 -100">
+      	<a-animation attribute="position" to="-70 -100 -100" dur="20000"></a-animation>
+      </a-entity>
+
+      <a-light type="ambient" color="white" ></a-light>
+      <a-light type="point" intensiy="3" position="0 -20 -70" color="white" ></a-light>
+      <a-light type="point" intensiy="3" position="0 -10 -70" color="white" ></a-light>
+      <a-light type="point" intensiy="3" position="0 20 -70" color="white" ></a-light>
+      <a-light type="point" intensiy="3" position="0 10 -70" color="white" ></a-light>
+
+		  <a-entity movement-controls position="0 0 5">
+        <a-entity camera position="0 1.6 0" look-controls></a-entity>
+      </a-entity>
+
+    </a-scene>
+  </body>
+</html>
