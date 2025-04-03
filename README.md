@@ -1,7 +1,7 @@
 @ -0,0 +1,171 @@
 # Some notes while learning about A-frame
 
-These are my notes,
+These are notes of JESUS BARAHONA (this is an attempt to fork ;P),
 taken while learning about A-frame.
 Maybe they could be useful to others,
 but your mileage may vary...
